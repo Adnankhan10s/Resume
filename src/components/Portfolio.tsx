@@ -37,7 +37,7 @@ const projects= [
 
 const Portfolio = () => {
   return (
-    <div className='text-white bg-gradient-to-b from-black to-[#381a5f] py-16' id='portfolio'>
+    <div className='text-white bg-gradient-to-b from-black to-[#381a5f] py-16 w-full' id='portfolio'>
         <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4'> Selected 
         <span className='text-orange-400'> Projects </span> </h1>
         <div className='px-6 md:px-0 max-w-[1000px] mx-auto mt-40 space-y-24'>
@@ -47,19 +47,20 @@ const Portfolio = () => {
                     key={index}
                     initial={{opacity :0, y:75}}
                     whileInView={{opacity : 1 , y : 0}}
-                    viewport={{once : true}}
+                    viewport={{once:false}}
                     transition={{duration : 0.5 , delay : 0.25 }}
-                    className={`mt-12 flex flex-col ${index % 2 === 1 ? " md:flex-row-reverse gap-12": " md:flex-row"}`}
+                    className={`mt-12 flex flex-col gap-6 ${index % 2 === 1 ? " md:flex-row-reverse gap-12": " md:flex-row"}`}
                     >
-                        <div className='space-y-2 max-w-[550px]'>
+                        <div className='space-y-2 w-full'>
                          <h2 className='text-white/70 text-7xl my-4'>{`0 ${index +1}`}</h2>
                          <h2 className='text-4xl'>{project.title}</h2>
                          <p className='text-lg text-white/70 break-words p-4'>{project.desc}</p>
                          <p className='text-xl text-orange-400 font-semibold'>{project.devstack}</p>
                          <div className='w-64 h-[1px] bg-gray-400 my-4'>
+                         </div>
                             <a href={project.link}>Link </a>
                             <a href={project.git}>Git</a>
-                         </div>
+                         
                         </div>
                         <div className='flex justify-center items-center'>
                             <Image src={project.src} alt={project.title} className='h-[350px] w-[500px] object-cover border rounded border-gray-400' />

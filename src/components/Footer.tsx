@@ -3,7 +3,7 @@ import { FaLinkedin , FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='px-6 md:px-0 mt-12 text-white/70 py-8 container mx-auto boder-t border-gray-700 pt-4 max-w-[1000px] flex justify-between items-center'>
+    <div className='px-6 md:px-0 mt-12 text-white/70 py-8 container mx-auto boder-t border-gray-700 pt-4 w-full flex justify-between items-center'>
         <h1 className='text-2xl font-bold'>@ Adnan Khan</h1>
         <div className='flex space-x-6 mt-4'>
             <a href='#' className='hover:text-gray-300'><FaLinkedin size={24} /></a>
