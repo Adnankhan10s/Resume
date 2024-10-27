@@ -3,15 +3,15 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import project from '../assets/project.jpg';
-import project1 from '../assets/proj1.jpg';
+import project1 from '../assets/proj1.png';
 
 const projects= [
     {
-        title: "Eccomerce Digital Products",
+        title: "Virtual Assistant Services",
         desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore aut natus veritatis ab itaque nemo ducimus maiores, dolores veniam reprehenderit deleniti cumque voluptatum.",
-        devstack : "MongoDB , Express , React , Node.js",
-        link : "#",
-        git : "#",
+        devstack : "Next-Js , Mongo-DB , Framer-Motion ",
+        link : "https://mn-trusted.vercel.app/",
+        git : "https://github.com/Adnankhan10s/MN-trusted",
         src: project1
     },
     {
@@ -62,8 +62,8 @@ const Portfolio = () => {
                             <a href={project.git}>Git</a>
                          
                         </div>
-                        <div className='flex justify-center items-center'>
-                            <Image src={project.src} alt={project.title} className='h-[350px] w-[500px] object-cover border rounded border-gray-400' />
+                        <div className='flex justify-center items-center h-[300px] w-[500px] object-cover'>
+                            <Image width={600} height={300} src={project.src} alt={project.title} className='h-[300px] w-[500px] border rounded border-gray-400' />
                         </div>
 
                     </motion.div>
