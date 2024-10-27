@@ -58,9 +58,10 @@ const Portfolio = () => {
                          <p className='text-xl text-orange-400 font-semibold'>{project.devstack}</p>
                          <div className='w-64 h-[1px] bg-gray-400 my-4'>
                          </div>
-                            <a href={project.link}>Link </a>
-                            <a href={project.git}>Git</a>
-                         
+                         <div className='space-x-2 pt-3'>
+                            <a href={project.link} className='px-4 py-2 bg-green-400 hover:text-gray-400 rounded'>Link </a>
+                            <a href={project.git} className='px-4 py-2 bg-emerald-600 hover:text-gray-400 rounded'>Git</a>
+                            </div>
                         </div>
                         <div className='flex justify-center items-center h-[300px] w-[500px] object-cover'>
                             <Image width={600} height={300} src={project.src} alt={project.title} className='h-[300px] w-[500px] border rounded border-gray-400' />
