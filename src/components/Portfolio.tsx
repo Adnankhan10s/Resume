@@ -63,8 +63,8 @@ const Portfolio = () => {
                             <a href={project.git} className='px-4 py-2 bg-emerald-600 hover:text-gray-400 rounded'>Git</a>
                             </div>
                         </div>
-                        <div className='flex justify-center items-center md:h-[300px] md:w-[500px] w-[310px] h-[320px] object-cover'>
-                            <Image width={600} height={300} src={project.src} alt={project.title} className='md:h-[300px] md:w-[500px] h-[320px] border rounded border-gray-400' />
+                        <div className='flex justify-center items-center md:h-[300px] md:w-[500px] w-[310px] h-[270px] object-cover'>
+                            <Image width={600} height={300} src={project.src} alt={project.title} className='md:h-[300px] md:w-[500px] h-[270px] border rounded border-gray-400' />
                         </div>
 
                     </motion.div>
