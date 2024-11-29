@@ -62,7 +62,7 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* Mobile View */}
-             <div className="md:hidden fixed bg-[linear-gradient(to_bottom,#000,#2B1942_45%,#8F5C55_90%)] top-0 py-5  w-full z-50 flex justify-between items-center px-4">
+             <div className="md:hidden fixed bg-[linear-gradient(to_bottom,#000,#2B1942_75%)] top-0 py-5  w-full z-50 flex justify-between items-center px-4">
                 <div><h1 className=" text-3xl font-bold text-[#E48A57] ">Adnan Khan</h1></div>
             <div onClick={toggleNav} className="  border rounded text-[#E48A57] border-[#E48A57] p-2 ">
                {nav ? <AiOutlineClose size={30} />: <AiOutlineMenu size={30}/>}
@@ -72,7 +72,7 @@ const Navbar = () => {
         initial ={false}
         animate ={nav ? 'open' : 'closed' }
         variants={menuVarients}
-        className="fixed top-0 left-0 w-full z-40 bg-[linear-gradient(to_top,#000,#2B1942_45%,#8F5C55_80%)]"
+        className="fixed top-0 left-0 w-full z-40 bg-[linear-gradient(to_top,#000,#2B1942_45%)]"
         >
             <ul className="text-4xl font-semibold my-24 text-center space-y-8">
                 {
