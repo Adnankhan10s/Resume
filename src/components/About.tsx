@@ -9,8 +9,15 @@ import finance from '../assets/finance.png';
 
 const About = () => {
     return (
-        <div className='w-full mx-auto md:px-4 ' id='about '>
-            <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4'> About 
+        <div className='w-full mx-auto md:px-4'id='about' >
+              <div className='flex justify-center items-center md:my-10 my-5'>
+             <button className='px-4 md:px-6 md:py-4 py-2 font-bold text-black rounded hover:text-gray-600 bg-gradient-to-r bg-orange-600 via-orange-400 from-white/45' >
+                <a href="./AdnanKhan.pdf.docx" download='My-CV'>
+                      Download CV
+                </a>
+             </button> 
+            </div>
+            <h1  className='text-white md:text-6xl text-center text-4xl max-w-[320px] mx-auto font-semibold p-4 mb-4'> About 
                 <span className='text-orange-400'> Me </span> </h1>
 
             <div className='px-6 md:px-0 grid md:grid-cols-8 gap-6 place-items-center'>
@@ -21,7 +28,7 @@ const About = () => {
                         <Image src={book} alt='book' className='md:w-auto w-[100px] mx-auto md:mx-0 h-[130px]' />
                         <div className='flex flex-col mt-4'>
                             <h2 className='text-2xl font-bold text-white/80'>Education</h2>
-                            <p className='md:text-lg text-sm text-white/70 mt-2'>I hold a degree in Computer Science and I am focusing on technologies like React,Next.js and Tailwind CSS.</p>
+                            <p className='md:text-lg text-sm text-white/70 mt-2'>I hold a degree in Computer Science and I am focusing on technologies like HTML ,CSS ,Javascript ,React ,Next.js ,Express.js and Tailwind CSS.</p>
                         </div>
                     </div>
 

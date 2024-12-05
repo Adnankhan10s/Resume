@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import phone from '../assets/phone.png';
 import mail from '../assets/mail.png';
-import { Schema, z } from 'zod';
+import {  z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
