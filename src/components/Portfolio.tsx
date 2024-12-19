@@ -3,15 +3,15 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import project from '../assets/project.jpg';
-import project1 from '../assets/proj1.png';
+import project1 from '../assets/Proj1.png';
 
 const projects= [
     {
-        title: "Virtual Assistant Services",
-        desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore aut natus veritatis ab itaque nemo ducimus maiores, dolores veniam reprehenderit deleniti cumque voluptatum.",
-        devstack : "Next-Js , Mongo-DB , Framer-Motion ",
-        link : "https://mn-trusted.vercel.app/",
-        git : "https://github.com/Adnankhan10s/MN-trusted",
+        title: "TODO-APP",
+        desc : "This Todo App Created in Next.js 15 using AppRouter RESTFUL API Project.",
+        devstack : "Next-Js , Mongo-DB , Typescript ",
+        link : "https://todo-app-4gu3.vercel.app/",
+        git : "https://github.com/Adnankhan10s/Todo-app",
         src: project1
     },
     {
