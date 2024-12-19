@@ -2,8 +2,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import project from '../assets/project.jpg';
+import project from '../assets/proj2.jpg';
 import project1 from '../assets/proj1.png';
+import project3 from '../assets/proj3.png'
 
 const projects= [
     {
@@ -15,20 +16,20 @@ const projects= [
         src: project1
     },
     {
-        title: "Interactive E-Learning Platform",
-        desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore aut natus veritatis ab itaque nemo ducimus maiores, dolores veniam reprehenderit deleniti cumque voluptatum.",
-        devstack : "Next.js",
-        link : "#",
-        git :"#",
+        title: "Virtual Assistance Services Website",
+        desc : "MNtrusted website provide real-estate VA services across the world lot of Services provides with professionals ",
+        devstack : "Next.js , MongoDB , Ts , Framer-Motion , Nodemailer & Cloudinary",
+        link : "https://mn-trusted.vercel.app/",
+        git :"https://github.com/Adnankhan10s/MN-trusted",
         src: project  
     },
     {
-        title: "Portfolio Website",
+        title: "Weather App",
         desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore aut natus veritatis ab itaque nemo ducimus maiores, dolores veniam reprehenderit deleniti cumque voluptatum.",
         devstack : "Next.js , Tailwind CSS",
-        link : "#",
-        git :"#",
-        src: project1  
+        link : "https://weather-steel-nine.vercel.app/",
+        git :"https://github.com/Adnankhan10s/Weather",
+        src: project3 
     }
 ]
 
@@ -63,8 +64,8 @@ const Portfolio = () => {
                             <a href={project.git} className='px-4 py-2 bg-emerald-600 hover:text-gray-400 rounded'>Git</a>
                             </div>
                         </div>
-                        <div className='flex justify-center items-center md:h-[300px] md:w-[500px] w-[310px] h-[270px] object-cover'>
-                            <Image width={600} height={300} src={project.src} alt={project.title} className='md:h-[300px] md:w-[500px] h-[270px] border rounded border-gray-400' />
+                        <div className='flex justify-center items-center md:h-[300px] md:w-[500px] w-[310px] h-[270px] object-contain '>
+                            <Image width={800} height={50} priority src={project.src} alt={project.title} className='md:h-[300px] md:w-[500px] h-[270px] border rounded border-gray-400 object-center' />
                         </div>
 
                     </motion.div>
