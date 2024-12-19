@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import project from '../assets/project.jpg';
-import project1 from '../assets/Proj1.png';
+import project1 from '../assets/proj1.png';
 
 const projects= [
     {
